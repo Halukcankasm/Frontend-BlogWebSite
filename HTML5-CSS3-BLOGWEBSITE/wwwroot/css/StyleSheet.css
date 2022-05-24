@@ -1,0 +1,198 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+div#headOfSite {
+	width: 100%;
+	background-color: lightgray;
+	padding: 3%;
+	text-align: center;
+}
+
+li, a, button, h2, span {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	color: black;
+	text-decoration: none;
+}
+
+
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2% 2%;
+	transition: all 0.3s ease 0s;
+	background-color: #ECF0F1;
+}
+
+header h2 {
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+div#dropDownArea {
+	display: none;
+}
+
+button#dropDownBtn {
+	border: none;
+	padding: 9px 25px;
+	background-color: whitesmoke;
+	border-radius: 50px;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+}
+
+
+div#dropDown ul {
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+}
+
+div#dropDown ul a {
+	text-decoration: none;
+}
+
+
+
+nav#navBar ul {
+	display: flex;
+}
+
+nav#navBar li {
+	list-style-type: none;
+	padding: 0px 20px;
+}
+
+nav#navBar li a {
+	text-decoration: none;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+}
+
+button#contactButton {
+	border: none;
+	padding: 9px 25px;
+	background-color: rgba(0, 136, 169, 1);
+	border-radius: 50px;
+	transition: all 0.3s ease 0s;
+	cursor: pointer;
+}
+
+button#contactButton:hover, nav#navBar li a:hover, header h2:hover {
+	color: #0088a9;
+}
+
+
+
+div#body {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+div#slideSmallBody {
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+div#aboutUs {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+
+
+div#aboutUs img {
+	width: 100%;
+	height: auto;
+}
+
+div#myAddress {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+div#myAddress a{
+	text-decoration: underline;
+	color: blue;
+}
+
+div#slideLargeBody {
+	width: 75%;
+	display: flex;
+	flex-direction: column;
+}
+
+div.myPosts {
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+div.myPosts a{
+	text-decoration: underline;
+	color: blue;
+}
+
+div.myPosts img{
+	width: 70%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10px;
+	padding-top: 10px;
+
+}
+
+
+@media screen and (max-width: 650px){
+
+	div#dropDownArea {
+		display: block;
+	}
+
+	div#body {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	div#slideSmallBody {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		padding: 10px;
+	}
+
+	div#slideLargeBody {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	div.myPosts {
+		padding: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+
+}
+
+
